@@ -1,0 +1,165 @@
+/* Main Page */
+
+body {
+    padding-top: 95px;
+    background-image: url(../img/bg-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0!important;
+    padding: 0!important;
+    overflow-x: hidden;
+}
+
+html {
+    margin: 0!important;
+    padding: 0!important;
+}
+
+
+/* Navigation */
+
+.navbar-wrapper {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 2px 2px 16px #000;
+}
+
+.btn-start,
+.btn-start:hover {
+    background: #ff8d2c;
+    color: #000;
+    border-radius: 2px
+}
+
+.btn-small {
+    font-weight: 400;
+    padding: 4px;
+}
+
+
+/* First Section */
+
+.sec {
+    position: relative;
+}
+
+.sec-1 {
+    height: 600px;
+}
+
+.sec-1-centered {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 240px;
+    padding-top: 240px;
+    text-align: center
+}
+
+.bg-1-h-1 {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+
+.sec-1-btn-wrapper {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.sec-1-btn {
+    color: white;
+    font-weight: 600;
+}
+
+.sec-1-wrp-1 {
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(100, 93, 86, 0.5));
+    height: 600px;
+    width: 100%;
+}
+
+
+/* Second section */
+
+.sec-2 {
+    background: #fff;
+    min-height: 600px;
+}
+
+.sec-2-wrp {
+    padding-top: 9vw!important;
+    padding-bottom: 20px;
+    padding-left: 0
+}
+
+.sec-2-ribbon {
+    position: absolute;
+    top: 0;
+    z-index: 999
+}
+
+.sec-2-ribbon img {
+    width: 100%;
+}
+
+.text-orange {
+    color: #ffb20f;
+}
+
+.sec-2-icon-dec {
+    max-width: 19vw;
+    word-wrap: break-word
+}
+
+.sec-2-icn-wrp {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 4px;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+.sec-2-icn-wrp:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: -2px
+}
+
+
+/* Section 3 */
+
+.sec-3 {
+    background-image: url(../img/bg-2.png), linear-gradient(to right, rgba(86, 61, 124, 0.4), rgba(100, 93, 86, 0.5));
+    min-height: 600px;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 100px
+}
+
+.sec-3-list li {
+    background: url(../img/blt.png) no-repeat left top;
+    /* <-- change `left` & `top` too for extra control */
+    padding: 0px 10px 10px 38px;
+    /* reset styles (optional): */
+    list-style: none;
+    margin-top: 20px
+}
+
+@media all and (max-width:900px) {
+    body {
+        padding-top: 173px;
+    }
+    .sec-1-centered {
+        top: 270px;
+        width: 100%;
+    }
+}
