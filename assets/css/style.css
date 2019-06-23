@@ -354,6 +354,42 @@ a:visited {
     height: 201px
 }
 
+.sec-5 .slick-next {
+    right: 30px;
+}
+
+.sec-5 .slick-prev {
+    left: 30px;
+}
+
+.sec-5 .slick-prev::before,
+.sec-5 .slick-next::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-size: 100%;
+    opacity: 0.6;
+}
+
+.sec-5 .slick-next,
+.sec-5 .slick-prev {
+    z-index: 999;
+}
+
+.sec-5 .slick-prev:hover::before,
+.sec-5 .slick-next:hover::before {
+    opacity: 1;
+}
+
+.sec-5 .slick-next::before {
+    background-image: url(../img/sec-5-arw-next.png);
+}
+
+.sec-5 .slick-prev::before {
+    background-image: url(../img/sec-5-arw-prev.png);
+}
+
 
 /* Section 6 */
 
