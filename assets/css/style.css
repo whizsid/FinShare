@@ -15,17 +15,21 @@ html {
     padding: 0!important;
 }
 
+a:link,
+a:active,
+a:visited {
+    color: unset;
+    text-decoration: unset;
+}
+
 
 /* Navigation */
 
 .navbar-wrapper {
-    position: fixed;
     width: 100vw;
-    top: 0;
-    left: 0;
-    z-index: 1000;
     background: #fff;
     box-shadow: 2px 2px 16px #000;
+    text-align: center
 }
 
 .btn-start,
@@ -38,6 +42,10 @@ html {
 .btn-small {
     font-weight: 400;
     padding: 4px;
+}
+
+.navbar-nav {
+    padding-left: 8vw;
 }
 
 
@@ -128,10 +136,32 @@ html {
     cursor: pointer;
 }
 
+.sec-2-icn-wrp::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: -2vw;
+    height: 80%;
+    margin-top: 10%;
+    border-radius: 100%;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4)
+}
+
 .sec-2-icn-wrp:hover {
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     margin-top: -2px
+}
+
+.sec-2-icn-wrp:hover::before {
+    display: none;
+}
+
+.sec-2-icn-wrp:hover+.sec-2-icn-wrp::before {
+    display: none
 }
 
 
@@ -142,7 +172,8 @@ html {
     min-height: 600px;
     background-size: cover;
     padding-top: 40px;
-    padding-bottom: 100px
+    padding-bottom: 100px;
+    background-position-x: right
 }
 
 .sec-3-list li {
@@ -151,8 +182,268 @@ html {
     padding: 0px 10px 10px 38px;
     /* reset styles (optional): */
     list-style: none;
-    margin-top: 20px
+    margin-top: 20px;
+    font-weight: 600
 }
+
+
+/* Section 4 */
+
+.sec-4 {
+    background-color: #f5f5f5;
+    min-height: 900px;
+    background-image: url(../img/bg-3.png);
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.sec-4-logo {
+    background: #fff;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 270px;
+    border: solid #f0f0f0 20px;
+    position: relative
+}
+
+.sec-4-logo-outline {
+    width: 440px;
+    height: 440px;
+    position: absolute;
+    top: 270px;
+    left: 50vw;
+    margin-left: -230px;
+    transform: rotate(-90deg);
+    transition: transform .5s
+}
+
+.sec-4-logo img {
+    margin: auto;
+    width: 60%;
+    margin-top: 10%;
+}
+
+.sec-4-icn {
+    background: linear-gradient(to bottom, #ffb61a, #fe7c22);
+    border-radius: 8px;
+    box-shadow: 0px 0px 16px #f5f5f5;
+    vertical-align: middle;
+    display: inline;
+}
+
+.sec-4-part-title {
+    display: inline;
+    vertical-align: middle
+}
+
+.sec-4-part {
+    position: absolute;
+}
+
+.sec-4-part:hover .sec-4-part-title {
+    color: #ffb20f;
+}
+
+.sec-4-part .text-muted {
+    padding-top: 16px;
+}
+
+.sec-4-part-1 {
+    top: 140px;
+    left: 45vw;
+}
+
+.sec-4-part-1 .sec-4-icn {
+    margin-top: 30px
+}
+
+.sec-4-part-1:hover~.sec-4-logo-outline {
+    transform: rotate(-162deg)
+}
+
+.sec-4-part-2 {
+    top: 360px;
+    left: 65vw;
+}
+
+.sec-4-part-2:hover~.sec-4-logo-outline {
+    transform: rotate(-90deg)
+}
+
+.sec-4-part-3 {
+    top: 620px;
+    left: 60vw;
+}
+
+.sec-4-part-3:hover~.sec-4-logo-outline {
+    transform: rotate(-18deg)
+}
+
+.sec-4-part-4 {
+    top: 620px;
+    right: 60vw;
+}
+
+.sec-4-part-4:hover~.sec-4-logo-outline {
+    transform: rotate(54deg)
+}
+
+.sec-4-part-5 {
+    top: 360px;
+    right: 65vw;
+}
+
+.sec-4-part-5:hover~.sec-4-logo-outline {
+    transform: rotate(126deg)
+}
+
+
+/* Section 5 */
+
+.sec-5 {
+    background: #fbf7f4;
+    text-align: center
+}
+
+.sec-5 .card-footer {
+    background: #fff
+}
+
+.sec-5 .card {
+    position: relative;
+    margin: auto;
+    margin-top: 2vw;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2vw;
+}
+
+.sec-5 .card .card-footer {
+    padding: 0
+}
+
+.sec-5-ftr {
+    border-left: 1px solid rgba(0, 0, 0, .125);
+    padding: 1rem 0;
+}
+
+.sec-5-pln-icn {
+    position: absolute;
+    right: 8px;
+    top: 110px
+}
+
+.sec-5-pln-icn:hover {
+    box-shadow: inset 0px 0px 4px #fff;
+    border-radius: 100%;
+    cursor: pointer
+}
+
+.sec-5-slider {
+    width: 100vw;
+    position: relative;
+}
+
+.sec-5-slider .card-img-top {
+    height: 201px
+}
+
+
+/* Section 6 */
+
+.sec-6 {
+    background: #fff;
+}
+
+.square {
+    position: relative;
+    width: 75%;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.square:hover,
+.square.square.active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, .125);
+    border: none;
+    background: #ffb61a;
+    color: #fff;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.sec-6 .square .content {
+    padding-top: 2vw;
+}
+
+.sec-6 .square .content img {
+    width: 30%;
+    margin-bottom: 1.5vw
+}
+
+.sec-6 .square .content:hover img,
+.sec-6 .square.active .content img {
+    filter: brightness(0) invert(1);
+}
+
+.sec-6-desc {
+    display: none;
+}
+
+.sec-6-bg {
+    max-width: 100%;
+}
+
+.sec-6-desc.active {
+    display: inline-block;
+}
+
+.sec-7 {
+    background-image: url(../img/sec-7-bg.jpg);
+    background-size: cover;
+}
+
+.sec-8 {
+    background: #28353d;
+}
+
+.sec-8 ul li:first-child {
+    margin-top: 1.5rem;
+}
+
+.sec-8 ul li {
+    margin-top: .5rem;
+}
+
+.sec-8 .divider {
+    color: #6c757d;
+    border-radius: 100%;
+    border: 1px solid;
+}
+
+.sec-8 img {
+    border-radius: 100%;
+}
+
+
+/* Responsive */
 
 @media all and (max-width:900px) {
     body {
@@ -161,5 +452,31 @@ html {
     .sec-1-centered {
         top: 270px;
         width: 100%;
+    }
+    .navbar-nav {
+        padding-left: 0;
+    }
+    .sec-2-icn-wrp:hover::before,
+    .sec-2-icn-wrp::before {
+        display: none;
+    }
+    .sec-4-part {
+        position: relative;
+        top: unset;
+        bottom: unset;
+        left: unset;
+        right: unset;
+        text-align: center;
+        padding-bottom: 10vh;
+    }
+    .sec-4-part .text-right {
+        text-align: center!important
+    }
+    .sec-6-bg {
+        width: 100%;
+    }
+    .square {
+        width: 100%;
+        font-size: .75rem
     }
 }
