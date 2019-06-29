@@ -1,0 +1,19 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "type": "devtools-for-chrome",
+            "request": "launch",
+            "name": "Launch Chrome DevTools",
+            "file": "${workspaceFolder}/index.html",
+            "chromePath": "/usr/bin/google-chrome-stable"
+        },
+        {
+            "type": "devtools-for-chrome",
+            "request": "attach",
+            "name": "Attach Chrome DevTools",
+            "url": "http://localhost/FinShare/index.html",
+            "chromePath": "/usr/bin/google-chrome-stable"
+        }
+    ]
+  }

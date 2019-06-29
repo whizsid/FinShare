@@ -479,6 +479,8 @@ a:visited {
 }
 
 
+
+
 /* Responsive */
 
 @media all and (max-width:900px) {
@@ -486,7 +488,7 @@ a:visited {
         padding-top: 173px;
     }
     .sec-1-centered {
-        top: 270px;
+        top: 100px;
         width: 100%;
     }
     .navbar-nav {
@@ -514,5 +516,42 @@ a:visited {
     .square {
         width: 100%;
         font-size: .75rem
+    }
+    .bd-navbar-nav{
+        display: block;
+    }
+    .nav-item {
+        width:100%;
+        display: block;
+    }
+    .navbar-expand .navbar-toggler{
+        top:1em;
+        right:1em;
+        position: absolute;
+        display: block;
+    }
+
+    .navbar-nav-scroll {
+        position: absolute;
+        bottom: 100%;
+    }
+
+    .menu-expanded .navbar-nav-scroll {
+        position: relative;
+        top: 0;
+        bottom: unset;
+    }
+
+    .sec-1{
+        height:400px
+    }
+
+    .sec-1-wrp-1{
+        height:400px;
+    }
+
+    .sec-4-icn {
+        display: block;
+        margin:auto;
     }
 }
